@@ -1,16 +1,18 @@
-### Hi there
+section .data
+    hello db 'hallo semuanya',0
 
-<!--
-**IJ4L/IJ4L** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+section .text
+    global _start
 
-Here are some ideas to get you started:
+_start:
+    ; Write the text to stdout
+    mov eax, 4        ; sys_write
+    mov ebx, 1        ; file descriptor 1 (stdout)
+    mov ecx, hello    ; pointer to the message
+    mov edx, 14       ; message length
+    int 0x80          ; invoke syscall
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+    ; Exit the program
+    mov eax, 1        ; sys_exit
+    xor ebx, ebx      ; exit status
+    int 0x80          ; invoke syscall
