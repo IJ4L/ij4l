@@ -1,15 +1,1 @@
-    section .data
-        hello db 'hallo semuanya',0
-
-    section .text
-        global _start
-
-    _start:
-        ; Write the text to stdout
-        mov ebx, 1        ; file descriptor 1 (stdout)
-        mov ecx, hello    ; pointer to the message
-        int 0x80          ; invoke syscall
-
-    ; Exit the program
-        xor ebx, ebx      ; exit status
-        int 0x80          ; invoke syscall
+<div style="padding-top:91.000%;position:relative;"><iframe src="https://gifer.com/embed/1fW0" width="100%" height="100%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe></div><p><a href="https://gifer.com">via GIFER</a></p>
