@@ -1,1 +1,1 @@
-![Logo GitHub](Group 1.png)
+![Group 1](Group 1.png)
