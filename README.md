@@ -1,6 +1,1 @@
-### Hello Budum
-
-#### A Learner day b day.
-
-- I use daily: `.flutter`, `.go`
-- `ping` me about **analyzing**, **design**, **development**
+![Logo GitHub](Group 1.png)
